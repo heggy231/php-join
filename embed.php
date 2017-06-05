@@ -22,7 +22,11 @@ $characters = [
 <body>
 <!-- sinlge quote everything is string-->
 <h1><?= "{$book['title']} by {$book['author']}" ?></h1>
+<h1><?= $book['title'] . " by " . $book['author']; ?></h1>
+
 <p><?= '"' . $book['title'] . '" is ' .$book['description']; ?>.</p>
+<p><?= "{$book['title']} is {$book['description']}"; ?>.</p>
+
 <h2>Main Characters</h2>
 <ul>
     <li><?= $characters[0]; ?></li>
